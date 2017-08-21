@@ -1,0 +1,99 @@
+<html>
+<head>
+	<link rel="icon" href="../img/icon.ico" type="image/x-icon">
+
+	<!--meta tags-->
+	<meta http-equiv="X-AU-Compatible" content="IE=edge">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<meta charset="UTF-32">
+	<meta lang="es">
+	<meta name="author" content="Joseph David Zamora Murillo">
+	<meta name="description" content="Tienes problemas con la tecnologia? Estas en el lugar correcto">
+	<meta name="keywords" content="bitwizard,BitWizard,Bitwizard,emuladores,musica gratis,software gratis,juegos gratis,">
+	<title>PlayWizard</title>
+	
+	<!--w3c css-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	<!--bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	
+	<!--jquery-->
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script>
+	$(document).ready(function(){
+
+	});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("b").click(function(){
+        $("b").hide();
+    });
+    $("a").click(function(){
+        $("p").show();
+    });
+});
+</script>
+	
+	<!--main-->
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<script src="other.js"></script>
+
+</head>
+<body>
+<div class="jumbotron">
+	<!-- Navigation -->
+	
+	<div class="container">
+	<div class="row">
+	<div class="col-md-1 hidden-sm hidden-xs">
+	<a class="logo img-fluid" href="../../index.html"><img src="../img/logo.png" width="120px" height="120px"></a>
+	</div>
+	<div class="col-md-11">
+	<ul class="nav navbar-full nav-pills navbar-right">
+		<li class="nav-item active"><a class="nav-link" href="../../index.html">Servicios</a></li>
+		<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Sobre</a></li>
+		<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Contactos</a></li>
+		<li class="nav-item"><a class="nav-link" href="sesion.html" style="color:white;">Iniciar Sesión <span class="glyphicon glyphicon-pencil"></span></a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+
+<div class="container" id="ini_f" style="margin-top:2%;">
+<form class="w3-container w3-card-4" action="../../ini.php" method="post">
+  <p>      
+ <label class="w3-text-blue"><b>Correo Electrónico</b></label>
+  <input class="w3-input w3-border" name="first" type="text" required></p>
+  <p>      
+  <label class="w3-text-blue"><b>Clave</b></label>
+  <input class="w3-input w3-border" name="last" type="password" required></p>
+  <div class="btn-group btn-group-lg" role="group">
+  <button type="submit" class="btn btn-success" id="ini">Iniciar Sesion</button>
+  <button class="btn btn-primary" id="reg" onclick="change()" >Registrarse</button>
+  </div>
+</form>
+</div>
+<div class="container" id="reg_f" style="margin:2%; display:none;">
+<form class="w3-container w3-card-4" action="../../reg.php" method="post">
+  <p>      
+  <label class="w3-text-blue"><b>Nombre de usuario</b></label>
+  <input class="w3-input w3-border" name="usr" type="text" required></p>
+  <p>      
+  <label class="w3-text-blue"><b>Correo Electrónico</b></label>
+  <input class="w3-input w3-border" name="email" type="text" required></p>
+  <label class="w3-text-blue"><b>Clave</b></label>
+  <input class="w3-input w3-border" name="pass" type="password" required></p>
+  <label class="w3-text-blue"><b>Confirmar Clave</b></label>
+  <input class="w3-input w3-border" name="confirm" type="password" required></p> 
+<div class="btn-group btn-group-lg" role="group">
+  <button class="btn btn-success" id="ini" onclick="change()">Iniciar Sesion</button>
+  <button type="submit" class="btn btn-primary" id="reg"	>Registrarse</button>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@font-face{
+	font-family:main;
+	src:url("assets/fonts/Aadhunik.ttf");
+}
+
+body{
+	font-family:main, arial, sans-serif;
+}
+
+#logo_name{
+	font-weight:bold; 
+	font-size:1.7em;
+	text-decoration:none;
+	color:gray;
+}
+
+.jumbotron{
+	padding-top:5px;
+}
+
+a{
+	color:blue;
+}
+
+/*carousel*/
+.slide1{
+  background-image: url('assets/img/carousel1.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('assets/img/carousel2.png');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('assets/img/carousel3.png');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide4{
+  background-image: url('assets/img/carousel4.png');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide5{
+  background-image: url('assets/img/carousel5.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide6{
+  background-image: url('assets/img/carousel6.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide7{
+  background-image: url('assets/img/carousel7.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}.slide8{
+  background-image: url('assets/img/carousel8.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}.slide9{
+  background: -webkit-linear-gradient(bottom right, #ff8888, #a60000);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}.slide10{
+  background: -webkit-linear-gradient(top left , #ffff8c, #a4a400);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  padding-bottom: .4em;
+  text-shadow:5px 5px #606060;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+
+.carousel-caption > p{
+ color:#ed041b;
+}

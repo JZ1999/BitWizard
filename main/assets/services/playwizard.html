@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--COLORS
+	playwizard titles: 
+	playwizard subtitles: #f4ee42
+-->
+<html>
+<head>
+	<link rel="icon" href="../img/icon.ico" type="image/x-icon">
+
+	<!--meta tags-->
+	<meta http-equiv="X-AU-Compatible" content="IE=edge">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<meta charset="UTF-16">
+	<meta lang="es">
+	<meta name="author" content="Joseph David Zamora Murillo">
+	<meta name="description" content="Tienes problemas con la tecnologia? Estas en el lugar correcto">
+	<meta name="keywords" content="bitwizard,BitWizard,Bitwizard,emuladores,musica gratis,software gratis,juegos gratis,">
+	<title>PlayWizard</title>
+	
+	<!--w3c css-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	<!--bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	
+	<!--jquery-->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){});
+	</script>-->
+	
+	<!--main-->
+	<link rel="stylesheet" type="text/css" href="../../index.css">
+	<script src="other.js"></script>
+	<style>
+		#lol_table, #coc_table, #kot_table{
+			display:none;
+		}
+	</style>
+	
+
+</script>
+</head>
+<body>
+	<div id="wrapper" class="jumbotron">
+	
+	<!-- Navigation -->
+	
+	<div class="container">
+	<div class="row">
+	<div class="col-md-1 hidden-sm hidden-xs">
+	<a class="logo img-fluid" href="../../index.html"><img src="../img/logo.png" width="120px" height="120px"></a>
+	</div>
+	<div class="col-md-11">
+	<ul class="nav navbar-full nav-pills navbar-right">
+		<li class="nav-item active"><a class="nav-link" href="../../index.html">Servicios</a></li>
+		<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Sobre</a></li>
+		<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Contactos</a></li>
+		<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Iniciar Sesión <span class="glyphicon glyphicon-pencil"></span></a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	
+	<!-- Services Content-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12"><h1 class="text-center" style="font-family:main; color:#edc74b;">PlayWizard</h1></div>
+		</div>
+
+
+	</div>
+<div class="btn-group btn-group-justified hidden-xs hidden-sm">
+  <a href="#" class="btn btn-warning" role="button" onclick="cr_show()">Clash Royale</a>
+  <a href="#" class="btn btn-warning" role="button" onclick="lol_show()">League Of Legends</a>
+  <a href="#" class="btn btn-warning" role="button" onclick="coc_show()">Clash Of Clans</a>
+  <a href="#" class="btn btn-warning" role="button" onclick="kot_show()">King Of Thieves</a>
+</div>
+<div class="btn-group btn-group-vertical hidden-lg hidden-md center-block">
+  <a href="#" class="btn btn-warning" role="button" onclick="cr_show()">Clash Royale</a>
+  <a href="#" class="btn btn-warning" role="button" onclick="lol_show()">League Of Legends</a>
+  <a href="#" class="btn btn-warning" role="button" onclick="coc_show()">Clash Of Clans</a>
+  <a href="#" class="btn btn-warning" role="button" onclick="kot_show()">King Of Thieves</a>
+</div>
+         <!--Clash Royale Table-->
+  <table class="table table-hover" id="cr_table">
+    <thead>
+      <tr>
+        <th style="color:#f4ee42;"><p style="font:2em;">IMAGEN</p></th>
+        <th style="color:#f4ee42;"><p style="font:2em;">DESCRIPCION</p></th>
+	<th><span style="color:#f4ee42; font-size:2em;"class="glyphicon glyphicon-shopping-cart"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<th><img src="../img/cr_1.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 10, 5 Legendarias, 3000 trofeos, 103 gemas</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/cr_2.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 8, 3 Legendarias, 2050 trofeos, 10 gemas</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/cr_3.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 9, 4 Legendarias, 2700 trofeos, 150 gemas</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+    </tbody>
+</table>
+
+
+<!--League of Legends Table-->
+  <table class="table table-hover" id="lol_table">
+    <thead>
+      <tr>
+        <th style="color:#f4ee42;"><p style="font:2em;">IMAGEN</p></th>
+        <th style="color:#f4ee42;"><p style="font:2em;">DESCRIPCION</p></th>
+	<th><span style="color:#f4ee42; font-size:2em;"class="glyphicon glyphicon-shopping-cart"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<th><img src="../img/lol_1.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 30, 108 Campeones, Diamante 5, 3000 RP</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/lol_2.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 30, 100 Campeones, Diamante 2, 1005 RP</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/lol_3.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 30, 87 Campeones, Oro 1, 150 RP</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/lol_1.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 30, 108 Campeones, Diamante 5, 3000 RP</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/lol_2.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 30, 100 Campeones, Diamante 2, 1005 RP</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/lol_3.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 30, 87 Campeones, Oro 1, 150 RP</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+    </tbody>
+  </table>
+
+
+         <!--Clash Of Clans Table-->
+  <table class="table table-hover" id="coc_table">
+    <thead>
+      <tr>
+        <th style="color:#f4ee42;"><p style="font:2em;">IMAGEN</p></th>
+        <th style="color:#f4ee42;"><p style="font:2em;">DESCRIPCION</p></th>
+	<th><span style="color:#f4ee42; font-size:2em;"class="glyphicon glyphicon-shopping-cart"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<th><img src="../img/coc_1.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Ayunta 10, 5 Legendarias, 3007 trofeos, 103 gemas</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/coc_2.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Ayunta 10, 3 Legendarias, 2250 trofeos, 10 gemas</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/coc_3.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Ayunta 8, 2750 trofeos, 150 gemas</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/coc_4.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Ayunta 11, 3750 trofeos, 2350 gemas</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+    </tbody>
+</table>
+
+         <!--King Of Thieves Table-->
+  <table class="table table-hover" id="kot_table">
+    <thead>
+      <tr>
+        <th style="color:#f4ee42;"><p style="font:2em;">IMAGEN</p></th>
+        <th style="color:#f4ee42;"><p style="font:2em;">DESCRIPCION</p></th>
+	<th><span style="color:#f4ee42; font-size:2em;"class="glyphicon glyphicon-shopping-cart"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<th><img src="../img/kot_1.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 50, 1600 Orbes, Esmeralda</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/kot_2.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 29, 500 Orbes, Diamante</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+      <tr>
+	<th><img src="../img/kot_3.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><p style="color:#f4ee42;">Nivel 82, 100 Orbes, Esmeralda</p></th>
+	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
+      </tr>
+    </tbody>
+</table>
+<div class="w3-center">
+<div class="w3-bar" style="background:#f4ee42; font-weight:bold; border-radius:5%;">
+  <a href="#" class="w3-bar-item w3-button">&laquo;</a>
+  <a href="#" class="w3-bar-item w3-button">1</a>
+  <a href="#" class="w3-bar-item w3-button">2</a>
+  <a href="#" class="w3-bar-item w3-button">3</a>
+  <a href="#" class="w3-bar-item w3-button">4</a>
+  <a href="#" class="w3-bar-item w3-button">&raquo;</a>
+</div>
+</div>
+
+
+  </div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

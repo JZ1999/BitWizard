@@ -1,0 +1,2 @@
+A MIME attachment of type <application/x-javascript> was removed here
+ by a drop-attachments-by-name filter rule on the host <smtp-fw-0101.amazon.com>.
