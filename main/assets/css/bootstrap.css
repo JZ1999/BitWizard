@@ -1124,6 +1124,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .img-rounded {
   border-radius: 6px;
 }
@@ -6239,7 +6240,7 @@ button.close {
 }
 .carousel-inner {
   position: relative;
-  width: 100%;
+  min-width: 100%;
   overflow: hidden;
 }
 .carousel-inner > .item {

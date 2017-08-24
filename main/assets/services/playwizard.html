@@ -22,13 +22,10 @@
 	
 	<!--bootstrap-->
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	
-	<!--jquery-->
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
 
-	$(document).ready(function(){});
-	</script>-->
+		<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	
 	<!--main-->
 	<link rel="stylesheet" type="text/css" href="../../index.css">
@@ -49,6 +46,7 @@
 	
 	<div class="container">
 	<div class="row">
+	<div class="hidden-xs">
 	<div class="col-md-1 hidden-sm hidden-xs">
 	<a class="logo img-fluid" href="../../index.html"><img src="../img/logo.png" width="120px" height="120px"></a>
 	</div>
@@ -58,15 +56,46 @@
 		<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Sobre</a></li>
 		<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Contactos</a></li>
 		<li class="nav-item"><a class="nav-link" href="#" style="color:white;">Iniciar Sesión <span class="glyphicon glyphicon-pencil"></span></a></li>
+	<li class="nav-item">
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Social
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+  </ul>
+</div>
+		</li>
 	</ul>
 	</div>
 	</div>
 	</div>
+	</div>
+
+	<!-- Navigation small-->
+
+		<ul class="ul-sm" style="background-color: #e09916;">
+			<li class="dropdown nav-sm">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-bars"></span></a>
+			</li>
+				<ul class="dropdown-menu">
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Contáctanos</a></li>
+					<li><a href="sesion.html">Iniciar Sesión</a></li>
+					<li><a href="#">Social</a></li>
+				</ul>
+				<li class="nav-sm" style="float: right;"><a href="#"><span class="fa fa-info-circle"></span></a></li>
+				<li class="nav-sm" style="float: right;"><a href="sesion.html"><span class="fa fa-user"></span></a></li>
+	</ul>
 	
 	<!-- Services Content-->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12"><h1 class="text-center" style="font-family:main; color:#edc74b;">PlayWizard</h1></div>
+			<div class="col-md-12"><h1 class="text-center" style="font-family:main; color:#edc74b;font-size: 4em; margin-top: 20%;">PlayWizard</h1></div>
 		</div>
 
 
@@ -89,22 +118,55 @@
       <tr>
         <th style="color:#f4ee42;"><p style="font:2em;">IMAGEN</p></th>
         <th style="color:#f4ee42;"><p style="font:2em;">DESCRIPCION</p></th>
-	<th><span style="color:#f4ee42; font-size:2em;"class="glyphicon glyphicon-shopping-cart"></span></th>
+	<th><span style="color:#f4ee42; font-size:2em;" 	class="glyphicon glyphicon-shopping-cart"></span></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-	<th><img src="../img/cr_1.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><img src="../img/cr_1.jpg" width="100px" height="100px" class="img-thumbnail" onclick="document.getElementById('cr_1_modal').style.display='block'"></th>
+
+
+	<div id="cr_1_modal" class="w3-modal" style="z-index: 21;">
+    <div class="w3-modal-content">
+       <span onclick="document.getElementById('cr_1_modal').style.display='none'" 
+       class="w3-button w3-display-topright">&times;</span>
+      <img class="img-thumbnail w3-display-topmiddle" src="../img/cr_1.jpg" width="400" height="500">
+      </div>
+      </div>
+
+
 	<th><p style="color:#f4ee42;">Nivel 10, 5 Legendarias, 3000 trofeos, 103 gemas</p></th>
 	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
       </tr>
+
+
       <tr>
-	<th><img src="../img/cr_2.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><img src="../img/cr_2.jpg" width="100px" height="100px" class="img-thumbnail" onclick="document.getElementById('cr_2_modal').style.display='block'"></th>
+
+	<div id="cr_2_modal" class="w3-modal" style="z-index: 21;">
+    <div class="w3-modal-content">
+       <span onclick="document.getElementById('cr_2_modal').style.display='none'" 
+       class="w3-button w3-display-topright">&times;</span>
+      <img class="img-thumbnail w3-display-topmiddle" src="../img/cr_2.jpg" width="400" height="500">
+      </div>
+      </div>
+
 	<th><p style="color:#f4ee42;">Nivel 8, 3 Legendarias, 2050 trofeos, 10 gemas</p></th>
 	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
       </tr>
+
+
       <tr>
-	<th><img src="../img/cr_3.jpg" width="100px" height="100px" class="img-thumbnail"></th>
+	<th><img src="../img/cr_3.jpg" width="100px" height="100px" class="img-thumbnail" onclick="document.getElementById('cr_3_modal').style.display='block'"></th>
+
+	<div id="cr_3_modal" class="w3-modal" style="z-index: 21;">
+    <div class="w3-modal-content">
+       <span onclick="document.getElementById('cr_3_modal').style.display='none'" 
+       class="w3-button w3-display-topright">&times;</span>
+      <img class="img-thumbnail w3-display-topmiddle" src="../img/cr_3.jpg" width="400" height="500">
+      </div>
+      </div>
+
 	<th><p style="color:#f4ee42;">Nivel 9, 4 Legendarias, 2700 trofeos, 150 gemas</p></th>
 	<th><input type="button" value="Ver" class="btn btn-danger btn-lg"></input></th>
       </tr>
@@ -118,7 +180,7 @@
       <tr>
         <th style="color:#f4ee42;"><p style="font:2em;">IMAGEN</p></th>
         <th style="color:#f4ee42;"><p style="font:2em;">DESCRIPCION</p></th>
-	<th><span style="color:#f4ee42; font-size:2em;"class="glyphicon glyphicon-shopping-cart"></span></th>
+	<th><span style="color:#f4ee42; font-size:2em;" class="glyphicon glyphicon-shopping-cart"></span></th>
       </tr>
     </thead>
     <tbody>
@@ -162,7 +224,7 @@
       <tr>
         <th style="color:#f4ee42;"><p style="font:2em;">IMAGEN</p></th>
         <th style="color:#f4ee42;"><p style="font:2em;">DESCRIPCION</p></th>
-	<th><span style="color:#f4ee42; font-size:2em;"class="glyphicon glyphicon-shopping-cart"></span></th>
+	<th><span style="color:#f4ee42; font-size:2em;" class="glyphicon glyphicon-shopping-cart"></span></th>
       </tr>
     </thead>
     <tbody>
@@ -195,7 +257,7 @@
       <tr>
         <th style="color:#f4ee42;"><p style="font:2em;">IMAGEN</p></th>
         <th style="color:#f4ee42;"><p style="font:2em;">DESCRIPCION</p></th>
-	<th><span style="color:#f4ee42; font-size:2em;"class="glyphicon glyphicon-shopping-cart"></span></th>
+	<th><span style="color:#f4ee42; font-size:2em;" class="glyphicon glyphicon-shopping-cart"></span></th>
       </tr>
     </thead>
     <tbody>
