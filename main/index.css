@@ -24,7 +24,7 @@ a{
 
 /*carousel*/
 .slide1{
-  background-image: url('assets/img/carousel1.jpg');
+  background-image: url('assets/img/carousel1.pg');
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,10 +95,15 @@ a{
   padding-bottom: .4em;
   text-shadow:5px 5px #606060;
 }
-.carousel-caption p{
-  font-size: 2em;
+@media(min-width: 912px){
+  .carousel-caption > p{
+    font-size: 1em;
+  }
 }
 
 .carousel-caption > p{
  color:#ed041b;
 }
+
+/*Text responsive*/
+
