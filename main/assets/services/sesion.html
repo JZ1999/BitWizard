@@ -63,34 +63,36 @@ $(document).ready(function(){
 	</div>
 
 <div class="container" id="ini_f" style="margin-top:2%;">
-<form class="w3-container w3-card-4" action="../../ini.php" method="post">
+<form class="w3-container w3-card-4" action="ini.php" method="post">
   <p>      
- <label class="w3-text-blue"><b>Correo Electrónico</b></label>
-  <input class="w3-input w3-border" name="first" type="text" required></p>
+ <label class="w3-text-blue"><b>Nombre de usuario o Correo Electrónico</b></label>
+  <input class="w3-input w3-border" name="user_i" type="text" required></p>
   <p>      
   <label class="w3-text-blue"><b>Clave</b></label>
-  <input class="w3-input w3-border" name="last" type="password" required></p>
+  <input class="w3-input w3-border" name="pass_i" type="password" required></p>
   <div class="btn-group btn-group-lg" role="group">
   <button type="submit" class="btn btn-success" id="ini">Iniciar Sesion</button>
-  <button class="btn btn-primary" id="reg" onclick="change()" >Registrarse</button>
   </div>
 </form>
+	<button class="btn btn-primary" id="reg" onclick="change()" >Registrarse</button>
 </div>
 <div class="container" id="reg_f" style="margin:2%; display:none;">
-<form class="w3-container w3-card-4" action="../../reg.php" method="post">
+<form class="w3-container w3-card-4" action="reg.php" method="post">
   <p>      
   <label class="w3-text-blue"><b>Nombre de usuario</b></label>
-  <input class="w3-input w3-border" name="usr" type="text" required></p>
-  <p>      
-  <label class="w3-text-blue"><b>Correo Electrónico</b></label>
-  <input class="w3-input w3-border" name="email" type="text" required></p>
+  <input class="w3-input w3-border" name="user_r" type="text" required></p>
+  <p>
+  <label class="w3-text-blue"><b>Nombre</b></label>
+  <input class="w3-input w3-border" name="name_r" type="text" required></p>
+  <label class="w3-text-blue"><b>Correo Electrónico</b></label><p>
+  <input class="w3-input w3-border" name="email_r" type="text" required></p>
   <label class="w3-text-blue"><b>Clave</b></label>
-  <input class="w3-input w3-border" name="pass" type="password" required></p>
+  <input class="w3-input w3-border" name="pass_r" type="password" required></p>
   <label class="w3-text-blue"><b>Confirmar Clave</b></label>
   <input class="w3-input w3-border" name="confirm" type="password" required></p> 
 <div class="btn-group btn-group-lg" role="group">
   <button class="btn btn-success" id="ini" onclick="change()">Iniciar Sesion</button>
-  <button type="submit" class="btn btn-primary" id="reg"	>Registrarse</button>
+  <button type="submit" class="btn btn-primary" id="reg">Registrarse</button>
 </div>
 </form>
 </div>
