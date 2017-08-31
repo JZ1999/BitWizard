@@ -38,7 +38,6 @@ if (isset($_POST["submit"])) {
 		}
 	}
 }else{
-	echo "aaa";
-	//header("Location: /sesion.html");
-	//exit();
+	header("Location: /sesion.html");
+	exit();
 }
