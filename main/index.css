@@ -67,7 +67,12 @@ a{
 }
 
 /*Title*/
-@media only screen and (max-width: 766px){
+@media(max-width: 766px){
+  .big_t{
+    display: none;
+  }
+}
+@media(min-width: 766px){
   .small_t{
     display: none;
   }
