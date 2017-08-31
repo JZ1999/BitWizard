@@ -1,8 +1,8 @@
 <?php
 
-$dbServer = "127.0.0.1";
+$dbServer = "localhost";
 $dbUser = "root";
-$dbPass = "Callofduty07";
-$dbName = "public_users";
+$dbPass = "Callofduty_07";
+$dbName = "users";
 
 $conn = mysqli_connect($dbServer, $dbUser, $dbPass, $dbName);
