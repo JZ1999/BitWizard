@@ -2,12 +2,20 @@
 //Registering users
 
 if (isset($_POST["submit"])) {
-	include_once "../../dbh.php";
+	#include_once "../../dbh.php";
+	
+	#Setting the database
+	$dbServer = "localhost";
+	$dbUser = "root";
+	$dbPass = "Callofduty_07";
+	$dbName = "users";
+	$conn = mysqli_connect($dbServer, $dbUser, $dbPass, $dbName);
+
+	#Form data
 	$user = $_POST["user_r"];
 	$pass = $_POST["pass_r"];
 	$email = $_POST["email_r"];
 	$name = $_POST["name_r"];
-	echo "start<br>";
 
 	#Check invalida char
 	if (!preg_match("/^[a-zA-Z0-9]*$/", $user) || !preg_match("/^[a-zA-Z]*$/", $name)) {
@@ -40,8 +48,8 @@ if (isset($_POST["submit"])) {
 				}else{
 					echo "2";
 				}
-				//header("Location: sesion.html");
-				//exit();
+				header("Location: sesion.html");
+				exit();
 			}
 
 		}
